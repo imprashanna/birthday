@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reasons Why I Like You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #ff69b4 30%, #8a2be2 100%);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #6a0dad;
+        }
+        .navbar a, .dropbtn {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ff69b4;
+            color: black;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #8a2be2;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ff69b4;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .content {
+            text-align: center;
+            padding: 50px;
+            position: relative;
+        }
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 32px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .birthday-message {
+            font-family: 'Merriweather', serif;
+            font-size: 40px;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .message {
+            font-size: 18px;
+            color: #fff;
+            margin-top: 20px;
+        }
+        .sparkle {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 10px white;
+            animation: sparkle 1.5s infinite;
+        }
+        @keyframes sparkle {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+        }
+    </style>
+    <script>
+        if (sessionStorage.getItem('loggedIn') !== 'true') {
+            window.location.href = 'login.html';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+            for (let i = 0; i < 100; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.top = Math.random() * window.innerHeight + 'px';
+                sparkle.style.left = Math.random() * window.innerWidth + 'px';
+                body.appendChild(sparkle);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-heart"></i> Reasons Why I Like You So Much
+            </div>
+            <div class="dropdown-content">
+                <a href="page1.html">Reason 1 💎</a>
+                <a href="page2.html">Reason 2 🌻</a>
+                <a href="page3.html">Reason 3 ❤️</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-music"></i> Songs That Remind Me of You
+            </div>
+            <div class="dropdown-content">
+                <a href="allsongs.html">All Songs</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-camera"></i> Good Times With You
+            </div>
+            <div class="dropdown-content">
+                <a href="goodtimes.html">Good Times With You</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-film"></i> Dialogues That Made Me Think of You
+            </div>
+            <div class="dropdown-content">
+                <a href="dialogues.html">Dialogues That Made Me Think of You When I Was Watching Movies</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="birthday-message">🎈 Happy Birthday Sweet Amisha ✨</div>
+        <h1>You're the prettiest girl ever. Stay same.🖤 </h1>
+        <img src="https://st2.depositphotos.com/1354168/7178/i/450/depositphotos_71789743-stock-photo-tulip-bouquet.jpg">
+        <div class="message">
+            <p> "Happy Amisha Day! I hope you're having an amazing birthday filled with joy. I remember you mentioning that birthdays can be a mixed bag, so if today is one of those times, I hope my message brings a little extra happiness your way." :)</p>
+        </div>
+    </div>
+</body>
+</html>

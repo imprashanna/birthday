@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Makes You Beautiful</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: #f0f0f0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        .navbar a, .dropbtn {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .content {
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .song {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-heart"></i> Reasons Why I Like You So Much
+            </div>
+            <div class="dropdown-content">
+                <a href="page1.html">Page 1</a>
+                <a href="page2.html">Page 2</a>
+                <a href="page3.html">Page 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-music"></i> Songs That Remind Me of You
+            </div>
+            <div class="dropdown-content">
+                <a href="song1.html">Bruno Mars - Just The Way You Are</a>
+                <a href="song2.html">Ed Sheeran - Perfect</a>
+                <a href="song3.html">Can't Take My Eyes Off Of You</a>
+                <a href="song4.html">What Makes You Beautiful</a>
+                <a href="song5.html">Talking to the Moon</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-camera"></i> Good Times With You
+            </div>
+            <div class="dropdown-content">
+                <a href="goodtimes.html">Good Times With You</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h1>What Makes You Beautiful</h1>
+        <div class="song">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QJO3ROT-A4E" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>

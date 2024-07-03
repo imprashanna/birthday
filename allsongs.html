@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs That Remind Me of You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #ff69b4 30%, #8a2be2 100%);
+            color: #fff;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #6a0dad;
+        }
+        .navbar a, .dropbtn {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ff69b4;
+            color: black;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #8a2be2;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ff69b4;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .content {
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 32px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .songs {
+            font-size: 18px;
+            color: #fff;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .song {
+            background-color: #fff;
+            color: #333;
+            padding: 10px;
+            border-radius: 10px;
+            width: 300px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .song:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .play-button {
+            color: #ff69b4;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .play-button:hover {
+            color: #8a2be2;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" aria-label="Home">Home</a>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-heart" aria-hidden="true"></i> Reasons Why I Like You So Much
+            </div>
+            <div class="dropdown-content">
+                <a href="page1.html">Reason 1 💎</a>
+                <a href="page2.html">Reason 2 🌻</a>
+                <a href="page3.html">Reason 3 ❤️</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-music" aria-hidden="true"></i> Songs That Remind Me of You
+            </div>
+            <div class="dropdown-content">
+                <a href="allsongs.html">All Songs</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-camera" aria-hidden="true"></i> Good Times With You
+            </div>
+            <div class="dropdown-content">
+                <a href="goodtimes.html">Good Times With You</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-film" aria-hidden="true"></i> Dialogues That Made Me Think of You
+            </div>
+            <div class="dropdown-content">
+                <a href="dialogues.html">Dialogues That Made Me Think of You When I Was Watching Movies</a>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>Songs That Remind Me of You</h1>
+        <div class="songs">
+            <div class="song">
+                Neil Diamond - Sweet Caroline
+                <a href="https://youtu.be/0iN-hemcKc8?si=CieAJaSbaNE6QZ9D" target="_blank" class="play-button" aria-label="Play Sweet Caroline on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Coldplay - A Sky Full of Stars
+                <a href="https://www.youtube.com/watch?v=VPRjCeoBqrI" target="_blank" class="play-button" aria-label="Play A Sky Full of Stars on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Ed Sheeran - Perfect
+                <a href="https://www.youtube.com/watch?v=2Vv-BfVoq4g" target="_blank" class="play-button" aria-label="Play Perfect on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Bruno Mars - Just the Way You Are
+                <a href="https://www.youtube.com/watch?v=LjhCEhWiKXk" target="_blank" class="play-button" aria-label="Play Just the Way You Are on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Coldplay - Yellow
+                <a href="https://www.youtube.com/watch?v=yKNxeF4KMsY" target="_blank" class="play-button" aria-label="Play Yellow on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Elton John - Your Song
+                <a href="https://youtu.be/Y1gYc1F-BeA?si=oW-WOJsEodby75kv" target="_blank" class="play-button" aria-label="Play Your Song on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Van Morrison - Moondance
+                <a href="https://www.youtube.com/watch?v=6lFxGBB4UGU" target="_blank" class="play-button" aria-label="Play Moondance on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                The Righteous Brothers - Unchained Melody
+                <a href="https://www.youtube.com/watch?v=qiiyq2xrSI0" target="_blank" class="play-button" aria-label="Play Unchained Melody on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Louis Armstrong - La Vie En Rose
+                <a href="https://youtu.be/3Ba_WoSZXvw?si=vjvnEzPuVipxy4ZO" target="_blank" class="play-button" aria-label="Play La Vie En Rose on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Frank Sinatra - Fly Me to the Moon
+                <a href="https://youtu.be/Cd_THG241GA?si=D2tINfhaFSmY8nPU" target="_blank" class="play-button" aria-label="Play Fly Me to the Moon on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Elvis Presley - Can't Help Falling in Love
+                <a href="https://www.youtube.com/watch?v=vGJTaP6anOU" target="_blank" class="play-button" aria-label="Play Can't Help Falling in Love on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Ed Sheeran - Thinking Out Loud
+                <a href="https://www.youtube.com/watch?v=lp-EO5I60KA" target="_blank" class="play-button" aria-label="Play Thinking Out Loud on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Ariana Grande - Into You
+                <a href="https://www.youtube.com/watch?v=1ekZEVeXwek" target="_blank" class="play-button" aria-label="Play Into You on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Charlie Puth - One Call Away
+                <a href="https://www.youtube.com/watch?v=BxuY9FET9Y4" target="_blank" class="play-button" aria-label="Play One Call Away on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Maroon 5 - Sugar
+                <a href="https://www.youtube.com/watch?v=09R8_2nJtjg" target="_blank" class="play-button" aria-label="Play Sugar on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Harry Styles - Adore You
+                <a href="https://www.youtube.com/watch?v=yezDEWako8U" target="_blank" class="play-button" aria-label="Play Adore You on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Berlin - Take My Breath Away
+                <a href="https://www.youtube.com/watch?v=Bx51eegLTY8" target="_blank" class="play-button" aria-label="Play Take My Breath Away on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Aaron Smith - Dancin (Krono Remix)
+                <a href="https://youtu.be/Cjp6RVrOOW0?si=b43WZh1J2y4L1WkY" target="_blank" class="play-button" aria-label="Play Dancin on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Jonas Blue - Perfect Strangers
+                <a href="https://youtu.be/v5iJhfeV9X0?si=5IYREi3Dpjfgr0ya" target="_blank" class="play-button" aria-label="Play Perfect Strangers on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Timbaland - The Way I Are
+                <a href="https://www.youtube.com/watch?v=U5rLz5AZBIA" target="_blank" class="play-button" aria-label="Play The Way I Are on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Bruno Mars - Locked Out of Heaven
+                <a href="https://www.youtube.com/watch?v=e-fA-gBCkj0" target="_blank" class="play-button" aria-label="Play Locked Out of Heaven on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Bill Medley, Jennifer Warnes - (I've Had) The Time of My Life
+                <a href="https://www.youtube.com/watch?v=WpmILPAcRQo" target="_blank" class="play-button" aria-label="Play The Time of My Life on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Plain White T's - Hey There Delilah
+                <a href="https://www.youtube.com/watch?v=EbJtYqBYCV8" target="_blank" class="play-button" aria-label="Play Hey There Delilah on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Frankie Valli - Can't Take My Eyes Off You
+                <a href="https://youtu.be/ArFiDG9fhgI?si=4BJ_alnwlxfSzcO4" target="_blank" class="play-button" aria-label="Play Can't Take My Eyes Off You on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Akon - Beautiful
+                <a href="https://youtu.be/DHo8bNXv8V8?si=gILtRFqe2OvvwR7X" target="_blank" class="play-button" aria-label="Play Beautiful on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                The Vamps - Somebody to You
+                <a href="https://youtu.be/HQDWzq3agqE?si=e7_HWtSL2Pugchkw" target="_blank" class="play-button" aria-label="Play Somebody to You on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                The Police - Every Breath You Take
+                <a href="https://www.youtube.com/watch?v=OMOGaugKpzs" target="_blank" class="play-button" aria-label="Play Every Breath You Take on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Enrique Iglesias - Finally Found You
+                <a href="https://youtu.be/yQd6lt6SAHA?si=H1eF4f2LnUAyaWkF" target="_blank" class="play-button" aria-label="Play Finally Found You on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Ben E. King - Stand by Me
+                <a href="https://www.youtube.com/watch?v=hwZNL7QVJjE" target="_blank" class="play-button" aria-label="Play Stand by Me on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Bill Withers - Just the Two of Us
+                <a href="https://youtu.be/VoEsEC2CLgE?si=IPqIKGvXOhUzZ2NL" target="_blank" class="play-button" aria-label="Play Just the Two of Us on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                Michael Buble - Sway
+                <a href="https://youtu.be/m02lC1lMFyU?si=oZTqAMfto1cr0wAP" target="_blank" class="play-button" aria-label="Play Sway on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+            <div class="song">
+                One Direction - What Makes You Beautiful
+                <a href="https://www.youtube.com/watch?v=QJO3ROT-A4E" target="_blank" class="play-button" aria-label="Play What Makes You Beautiful on YouTube"><i class="fas fa-play-circle"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

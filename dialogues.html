@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialogues That Made Me Think of You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #ff69b4 30%, #8a2be2 100%);
+            color: #fff;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #6a0dad;
+        }
+        .navbar a, .dropbtn {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ff69b4;
+            color: black;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #8a2be2;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ff69b4;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .content {
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 32px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .dialogues {
+            font-size: 18px;
+            color: #fff;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .dialogue {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .dialogue:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <script>
+        if (sessionStorage.getItem('loggedIn') !== 'true') {
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-heart"></i> Reasons Why I Like You So Much
+            </div>
+            <div class="dropdown-content">
+                <a href="page1.html">Reason 1 💎</a>
+                <a href="page2.html">Reason 2 🌻</a>
+                <a href="page3.html">Reason 3 ❤️</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-music"></i> Songs That Remind Me of You
+            </div>
+            <div class="dropdown-content">
+                <a href="allsongs.html">All Songs</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-camera"></i> Good Times With You
+            </div>
+            <div class="dropdown-content">
+                <a href="goodtimes.html">Good Times With You</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <i class="fas fa-film"></i> Dialogues That Made Me Think of You
+            </div>
+            <div class="dropdown-content">
+                <a href="dialogues.html">Dialogues That Made Me Think of You When I Was Watching Movies</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Dialogues That Made Me Think of You When I Was Watching Movies</h1>
+        <div class="dialogues">
+            <div class="dialogue">
+                <p>"To me, you are perfect." - Love Actually</p>
+            </div>
+            <div class="dialogue">
+                <p>"You had me at hello." - Jerry Maguire</p>
+            </div>
+            <div class="dialogue">
+                <p>"You're a stunningly talented, brilliant, amazing, show-stopping, spectacular woman." - The Devil Wears Prada</p>
+            </div>
+            <div class="dialogue">
+                <p>"I like you. Just as you are." - Bridget Jones's Diary</p>
+            </div>
+            <div class="dialogue">
+                <p>"You is kind. You is smart. You is important." - The Help</p>
+            </div>
+            <div class="dialogue">
+                <p>"I love how she makes me feel, like anything's possible." - 500 Days of Summer</p>
+            </div>
+            <div class="dialogue">
+                <p>"Here's to the ones who dream, foolish as they may seem." - La La Land</p>
+            </div>
+            <div class="dialogue">
+                <p>"No one ever made a difference by being like everyone else." - The Greatest Showman</p>
+            </div>
+            <div class="dialogue">
+                <p>"Perhaps it is good to have a beautiful mind, but an even greater gift is to discover a beautiful heart." - A Beautiful Mind</p>
+            </div>
+            <div class="dialogue">
+                <p>"I feel like I'm in a dream, but I'm wide awake." - Before Sunrise</p>
+            </div>
+            <div class="dialogue">
+                <p>"I fancy you. I knew it the minute I met you." - Silver Linings Playbook</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
